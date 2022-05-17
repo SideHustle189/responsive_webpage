@@ -93,6 +93,6 @@ function validate() {
     setTimeout(() => {
       errorDiv.style.display = "none";
       location.reload();
-    }, 10000);
+    }, 5000);
   }
 }
