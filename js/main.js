@@ -41,8 +41,13 @@ passwordToggler2.addEventListener("click", (e) => {
 });
 
 submitBtn.addEventListener("click", () => {
+  clearMessage();
   validate();
 });
+
+function clearMessage(){
+  errorDiv.innerText = '';
+}
 
 function validate() {
   if (
