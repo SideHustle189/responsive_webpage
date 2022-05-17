@@ -90,5 +90,9 @@ function validate() {
   } else {
     errorDiv.innerText = "Successful! Thanks for reaching out!";
     errorDiv.classList.add("success");
+    setTimeout(() => {
+      errorDiv.style.display = "none";
+      location.reload();
+    }, 10000);
   }
 }
